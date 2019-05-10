@@ -55,7 +55,7 @@
 .bottom{
         padding-top: 50px;
         padding-bottom: 50px;
-        margin-top: 50px;
+        margin-top: 0;
         padding-left: 50px;
         background-color: #F3F5F5;
         width: auto;
@@ -227,6 +227,7 @@
 
 /*FOOTER*/
   .bottom {
+    margin-top: 0;
     font-size: 14px;
   }
   .bottom .bottom-forward,
