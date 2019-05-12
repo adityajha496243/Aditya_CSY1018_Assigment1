@@ -1,47 +1,52 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
+<!-- Heading starts -->
   <head>
+    <!-- This link tag is used for fab icon -->
     <link rel="icon" href="image/fab.png" type="image/gif" sizes="16x16">
-    <title>ADITYA MEDIA</title>
-    <link rel="stylesheet" href="jobsstyle.css">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-  	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ADITYA MEDIA</title><!-- This title tag is used for to display name of website in the side of fab icon -->
+    <link rel="stylesheet" href="style.css"><!-- This link tag is used to import css -->
+    <link rel="stylesheet" href="jobsstyle.css"><!-- This link tag is used to import css of extra feature of job page -->
+    <script type="text/javascript" src="jobs.js"></script><!-- This link tag is used to import javascript to validate the form in the  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"><!-- This link tag is used to import and use open and close chk button for responsive navigation links-->
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- This link tag is used to import and use social media and other icons -->
   </head>
+  <!-- Heading ends -->
   
+  <!-- Body starts -->
   <body>
-
+  <!-- Responsive navigation links section start-->
   <div class="top">
-    <h2 class="icon">Aditya Media</h2>
-    <input type="checkbox" id="chk">
-    <label for="chk" class="open-card-dot">
-      <i class="fas fa-ellipsis-h"></i>
+    <h2 class="icon">Aditya Media</h2><!-- This line is used for the icon -->
+    <input type="checkbox" id="chk"><!-- This line is used to make the responsive button clickable --> 
+    <label for="chk" class="open-card-dot"><!-- This line is for 3 dot open button which is used in responsive section to open navigation links --> 
+      <i class="fas fa-ellipsis-h"></i><!-- This line is used to use icon of 3 dot open button -->
     </label>
-
+   <!-- Responsive navigation links section ends -->
+   <!-- Navigation link section starts -->
     <ul class="card">
       <a href="index.html"> Landing</a> 
       <a href="review.html"> Reviews</a> 
       <a href="glossary.html"> Glossary</a> 
       <a href="jobs.html"> Jobs</a> 
       <a href="tutorial.html"> Tutorials</a>
-      <label for="chk" class="close-card-dot">
-        <i class="fas fa-times"></i>
+      <label for="chk" class="close-card-dot"><!-- This line is for cross close button which is used in responsive section to close navigation links -->
+        <i class="fas fa-times"></i><!-- This line is used to use icon of cross close button -->
       </label>
     </ul>
   </div>
-
-
+<!-- Navigation link section Ends -->
+<!-- Header Advertisement section start-->
 <div class="ads">
   <h1>Up to 90% OFF</h1>
   <h2>Only in Arun Fashion</h2>
   <a href="#">Show More</a>
 </div>
-
-
+<!-- Header Advertisement section ends-->
+<!-- This is the breaking news section which keeps on scrolling -->
 <div class="breaking-news">
   <div class="one">Breaking News:</div>
-  <div class="two"><marquee behavior="scroll" direction="left">'Avengers: Endgame' may mean the end (or resurrection) for some Marvel characters. Tax office determines VAT for Pathao, a ride-sharing app, at Rs3 million</marquee></div>
+  <div class="two"><marquee behavior="scroll" direction="left">Many Marvel lead characters are resigning from MCU after "Avenger Endgame". Pathao, which is the app for sharing rides, had been decided Rs3 million VAT from Tax office</marquee></div>
 </div>
 
 <div class="box">
@@ -52,42 +57,44 @@
 			<div class="about">
 				<h1>CONTACT FORM</h1>
 				<p>Connect with us by sending your details.</p>
-			</div>
+			</div><br><br>
 
+			<form name="myform" action="" onsubmit="return validateForm()" method="post">
 			<div class="form">
 
 				<div class="top-form">
 				    <div class="inner-form">
 				       	<div class="label">name</div>
-				        <input type="text" placeholder="Aditya">
+				        <input type="text" id="fname" placeholder="Aditya">
 				    </div>
 				    <div class="inner-form">
 				        <div class="label">email</div>
-				        <input type="text" placeholder="Example@gmail.com">
+				        <input type="text" id="email" idplaceholder="Example@gmail.com">
 				    </div>
 				    <div class="inner-form">
 				        <div class="label">phone</div>
-				        <input type="text" placeholder="9860813062">
+				        <input type="text" id="phone" placeholder="9860813062">
 				    </div>
 				</div>
 
 				<div class="middle-form">
 				    <div class="inner-form">
 				        <div class="label">subject</div>
-				        <input type="text" placeholder="Subject">
+				        <input type="text" id="subject" placeholder="Subject">
 				    </div>
 				</div>
 
 				<div class="bottom-form">
 				    <div class="inner-form">
 				        <div class="label">message</div>
-				        <textarea placeholder="Your message"></textarea>
+				        <textarea placeholder="Your message" id="message"></textarea>
 				    </div>
 				</div>
 
-				<div class="btn">send form</div>
+				<button class="btn" type="submit" name="submit"> send form</button> 
 
 			</div>
+			</form>
 		</div>
 
 
@@ -154,23 +161,24 @@
   </div>
 
   </body>
+<!-- Body Ends -->
 
-
-  
+  <!-- Footer starts -->
+  <!-- Footer Advertisement section start-->
   <div class="ads">
   <h1>Up to 50% OFF</h1>
   <h2>Only in Manish Software Co.</h2>
   <a href="#">Show More</a>
   </div>
-
+  <!-- Footer Advertisement section end-->
   <footer class="bottom">
   <div class="bottom-forward">
-
+    <!-- This is about section -->
       <h2> About Aditya Media</h2> 
       <p class="us">
         <span>This is a News Website</span>
       </p>
-
+    <!-- This is the social media section -->
     <div class="symbol">
       <a href="https://www.facebook.com/profile.php?id=100008753704145" target="_blank"><i class="fa fa-facebook"></i></a>
       <a href="https://twitter.com/JhaAditya496243" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -179,7 +187,7 @@
     </div>
 
   </div>
-
+<!-- This is the contact section -->
   <div class="bottom-middle">
     
     <div>
@@ -198,7 +206,7 @@
     </div>
 
   </div>
-
+<!-- This is the footer navigation link section -->
   <div class="bottom-backward">
    
     <b>Aditya Media</b>
@@ -213,5 +221,5 @@
   
   </div>
 </footer>
-
+<!-- Footer Ends -->
 </html>

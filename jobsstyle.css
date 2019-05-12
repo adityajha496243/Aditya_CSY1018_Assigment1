@@ -71,6 +71,7 @@
   cursor: pointer;
 }
 
+/*This section is responsive code for tablet mode of form in job page*/
 @media screen and (max-width: 760px) {
   .container {
     margin: 25px auto 0;

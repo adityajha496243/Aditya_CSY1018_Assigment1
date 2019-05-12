@@ -1,3 +1,4 @@
+/*whole page css*/
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
 }
 
 /*HEADER*/
+/*This section is css for responsive navigation link*/
 .top{
   height: 100px;
   background: #34495e;
@@ -28,6 +30,7 @@
   padding: 0 10px;
   transition: 0.4s;
 }
+/*This section is css for responsive navigation link open and close button*/
 .open-card-dot,.close-card-dot{
   transition: 0.4s;
   font-size: 30px;
@@ -192,7 +195,7 @@
 }
 
 
-
+/*This section is responsive code for tablet mode*/
 @media screen and (max-width:760px) {
 
   /*HEADER*/
@@ -363,6 +366,7 @@
   width: 75%;
 }
 
+/*This section is responsive code for phone mode*/
 @media only screen and (min-width: 520px) {
   .box {
     grid-template-columns: 1fr 1fr;
@@ -371,6 +375,7 @@
     grid-column: 1/ span 2;
 }
 
+/*This section is responsive code for tablet mode*/
 @media only screen and (min-width: 760px) {
   .box {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -380,5 +385,5 @@
 .box{
     padding: 10px 0;
     margin-top: 20px;
-}
+  }
 
